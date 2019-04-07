@@ -2,7 +2,7 @@
 Implementation of the bit flip experiment in the [Hindsight Experience Replay](https://arxiv.org/pdf/1707.01495.pdf) paper using Double DQN with a Dueling architecture in PyTorch.
 
 ### Introduction to HER
-Hindsight Experience Replay (HER) is a technique for dealing with sparse rewards in environments with clearly defined goal states. In these environments, it is easy to tell if the goal is reached, but might be hard to get there. The idea is to use an off-policy algorithm that uses a replay memory and fill the memory with two kinds of experiences acquired during training. First of all experiences conditioned on the original goal states, but also experiences conditioned on "hindsight goals" that have actually been reached (e.g. the final state that was reached during an episode). Introducing these artificially reached goals means that both positive and negative feedback will be provided so that learning can occur.
+Hindsight Experience Replay (HER) is a technique for dealing with sparse rewards in environments with clearly defined goal states. In these environments, it is easy to tell if the goal is reached, but might be hard to get there. The idea is to use an off-policy algorithm that uses a replay memory and fill it with two kinds of experiences acquired during training. First of all experiences conditioned on the original goal states, but also experiences conditioned on "hindsight goals" that have actually been reached (e.g. the final state that was reached during an episode). Introducing these artificially reached goals means that both positive and negative feedback will be provided so that learning can occur.
 
 
 ### Results
