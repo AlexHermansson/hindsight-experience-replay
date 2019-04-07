@@ -6,7 +6,7 @@ Hindsight Experience Replay (HER) is a technique for dealing with sparse rewards
 
 
 ### Results
-Below are the success rates during training for 50 bits (there are more than 10^15 different states/goals in this case :scream:). Exploration starts at 20% and is decayed linearly to 0% during half of the training epochs. Each epoch consist of 50 cycles, where in each cycle 16 episodes are used to fill the replay memory followed by 40 update steps of the DQN. The success rates are taken as an avarage success over each epoch (i.e. avarged over 50 cycles * 16 episodes runs). All parameters/hyperparameters except for the exploration are identical to those noted in the paper, they can be found in the `train()` function and in the `DQNAgent` class.
+Below are the success rates during training for 50 bits (there are more than 10^15 different states/goals in this case :scream:). Exploration starts at 20% and is decayed linearly to 0% during half of the training epochs. Each epoch consist of 50 cycles, where in each cycle 16 episodes are used to fill the replay memory followed by 40 update steps of the DQN. The success rates are taken as an avarage success over each epoch (i.e. avarged over 50 cycles * 16 episodes runs). All parameters/hyperparameters except for the exploration are identical to those noted in the paper, they can be found in the `train()` function and in the class `DQNAgent`.
 
 ![50 bits](/50_bits.png)
 
